@@ -1,0 +1,18 @@
+aws rds describe-db-instances \
+  --filters "Name=engine,Values=mysql" \                  
+  --query "*[].[DBInstanceIdentifier,Endpoint.Address,Endpoint.Port,MasterUsername]"
+  
+  
+  
+  when calling the DescribeDBInstances operation: user is not authorized to perform: rds:DescribeDBInstances on resource
+  
+  aws rds describe-db-instances \
+    --db-instance-identifier mydbinstance99
+    
+    mysql -h mydbinstance99.c9qp3hnfxzfe.ap-southeast-1.rds.amazonaws.com -P 3306 -u admin -p
+    
+
+    
+    
+    
+

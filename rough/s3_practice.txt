@@ -1,0 +1,6 @@
+
+## Create new S3 Bucket
+aws s3api create-bucket \
+    --bucket myuniquebucket99 \
+    --region ap-southeast-1 \
+    --create-bucket-configuration LocationConstraint=ap-southeast-1
